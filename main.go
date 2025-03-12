@@ -10,6 +10,10 @@ func handler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+	for i := 0; i < 5; i++ {
+		fmt.Println("OLD COMMIT")
+	}
+
 	http.HandleFunc("/", handler)
 	fmt.Println("Starting server on :8081")
 	if err := http.ListenAndServe(":8081", nil); err != nil {
