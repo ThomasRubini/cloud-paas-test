@@ -11,7 +11,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	for i := 0; i < 5; i++ {
-		fmt.Println("OLD COMMIT")
+		fmt.Println("NEW COMMIT")
 	}
 
 	http.HandleFunc("/", handler)

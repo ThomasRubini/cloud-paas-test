@@ -6,5 +6,7 @@ COPY go.mod main.go ./
 
 RUN go build -o main .
 
+RUN touch /somefile.txt
+
 EXPOSE 8081
 CMD ["./main"]
